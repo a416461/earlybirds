@@ -1,0 +1,51 @@
+﻿<div class="row">
+    <div class="col-1-xs" id="voting">
+        <div id="voting">
+            <div class="" ng-click="vm.upVoteSession()">
+                &#9650;
+            </div>
+            <div>
+                <div>{{vm.ticket.priority}}</div>
+            </div>
+            <div class="" ng-click="vm.downVoteSession()">
+                &#9660;
+            </div>
+        </div>
+    </div>
+    <form class="col-11-xs ticket_view_text">
+        <div id="ticket_header">
+            <h1 id="content_h1"> {{vm.ticket.title}}</h1>
+            <label><img src="../img/trash.png" alt="trash" class="social-icon trash-icon" ng-click="vm.deleteTicket()"></label>
+        </div>
+        <fieldset>
+            <legend><span class=" number">1</span><strong>User Basic Info</strong></legend>
+            <div class="row">
+                <div class="col-6-md padding-bottom-none">
+                    <label class="display-inline-block"><strong>Name: </strong></label>{{vm.client.name}} <br />
+                    <label class="display-inline-block"><strong>Gender: </strong></label>{{vm.client.gender}} <br />
+                </div>
+                <div class="col-6-md padding-bottom-none">
+                    <label class="display-inline-block"><strong>Job: </strong></label>{{vm.client.occupation}} <br />
+                    <label class="display-inline-block"><strong>Email: </strong></label>{{vm.client.mailAddress}} <br />
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend><span class=" number">2</span><strong>Ticket Details</strong></legend>
+            <label class="display-inline-block"><strong>Ticket ID: </strong></label>{{vm.ticket.id}}<br />
+            <label class="display-inline-block"><strong>Priority: </strong></label>{{vm.ticket.priority}}<br />
+            <div>
+                <label class="display-inline-block"><strong>Type: </strong></label> {{vm.ticket.ticketType}}<br />
+                <button class="small-green-button" type="submit" ng-click="vm.claimTicket()" ng-show="!vm.ticket.assignedToUserId">Claim Ticket</button>
+            </div>
+            <label class="display-inline-block"><strong>Status: </strong></label> {{vm.ticket.status}}<br />
+            <label class="display-inline-block"><strong>Assigned To: </strong></label> <br />
+            <label class="display-inline-block"><strong>Description: </strong></label><br />{{vm.ticket.description}} <br />
+
+            <label class="display-inline-block"><strong>Solution: </strong></label><br />{{vm.ticket.solution}} <br />
+            <button class="green-button" type="submit" ng-click="vm.showSolutionForm()" ng-show="!vm.ticket.solution && !vm.showSolution">Add Solution</button>
+            <textarea id="solution" name="solution" ng-show="vm.showSolution" ng-model="vm.ticket.solution"></textarea>
+            <button class="green-button" type="submit" ng-show="vm.showSolution" ng-click="vm.solutionSubmit()">Submit Solution</button>
+        </fieldset>
+    </form>
+</div>

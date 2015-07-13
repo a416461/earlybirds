@@ -1,0 +1,64 @@
+﻿<style>
+    header {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+    body{
+        position:absolute;
+        left:30%;
+        width:800px;
+    }
+    h1{
+        color:black;
+    }
+</style>
+
+<form>
+    <h1> Suggestion {{test}}</h1>
+    <fieldset id="suggestion_format">
+        <legend>Your basic info</legend>
+
+        <label form="name">Name</label>
+        <input type="text" id="name" name="user_name" ng-model="client.name" />
+
+        <label form="email">Email</label>
+        <input type="email" id="mail" name="user_email" ng-model="client.mailAddress" />
+
+        <label>Gender:</label>
+        <input type="radio" id="male" value="1" name="user_gender" ng-model="client.gender" ><label for="male" class="light">male</label>
+        <input type="radio" id="male" value="2" name="user_gender" ng-model="client.gender"><label for="female" class="light">female</label>
+
+        <label form="job"> Job role:</label>
+        <select id="job" name="user_job" ng-model="client.occupation">
+            <optgroup label="engineer">
+                <option value="software engineer">Software engineer</option>
+                <option value="hardware engineer">Hardware engineer</option>
+                <option value="architecture engineer">Architecture engineer</option>
+            </optgroup>
+            <optgroup label="other">
+                <option value="teacher">Teacher</option>
+                <option value="doctor">Doctor</option>
+                <option value="student">Student</option>
+                <option value="professor">Professor</option>
+            </optgroup>
+        </select>
+    </fieldset>
+
+    <fieldset>
+        <legend>Your Suggestion</legend>
+        <label form="problem type"> Type:</label>
+        <select id="type" name="prolem_type" ng-model="ticket.ticketType">
+            <option value="Feature">Feature</option>
+            <option value="Complaint">Complaint</option>
+            <option value="Suggestion">Suggestion</option>
+        </select>
+        <label form="topic">Topic</label>
+        <textarea id="topic" name="topic" ng-model="ticket.title"></textarea>
+        <label form="description">Description</label>
+        <textarea id="description" name="description" ng-model="ticket.description"></textarea>
+        <a href="/tickets" type="submit" class="green-button submit_button" ng-click="submit()">submit</a>
+    </fieldset>
+</form>

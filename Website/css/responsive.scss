@@ -1,0 +1,82 @@
+﻿
+
+@media screen and (min-width: 660px) {
+
+    /***********************
+    Two column layout
+    ***********************/
+    #primary {
+        width: 50%;
+        float: left;
+    }
+
+    #secondary {
+        width: 40%;
+        float: right;
+    }
+
+        nav ul{
+        margin-top:100px;
+    } 
+
+    /***********************
+      Page: portofolio
+    ***********************/
+    /*#gallery li {
+        width: 28.3333%;
+    }*/
+    /*clear the fourth item in that case when it flips would not max up*/
+    /*#gallery li:nth-child(4n){
+        clear: left;
+    }*/
+
+    /***********************
+      Page: About
+    ***********************/
+    .profile-photo {
+        float: left;
+        margin: 5% 5% 5% 5%;
+    }
+
+}
+   @media screen and (min-width: 660px) {
+
+     /***********************
+     Header
+     ***********************/
+        nav {
+            background: none;
+            float: right;
+            font-size: 1.125em;
+            margin-right: 5%;
+            text-align: right;
+            width: 45%;
+            margin-top: 110px;
+        }
+
+        #logo {
+            float: left;
+            margin-left: 5%;
+            text-align: left;
+            width: 45%;
+            margin-top: 30px;
+        }
+        h1{
+            font-size: 2.5em;
+            }
+
+        h2{
+            font-size:1.125em;
+            margin-bottom: 20px;
+        }
+        header{
+            border-bottom: 5px solid deepskyblue ;
+            margin-bottom: 60px;
+        }
+
+       nav ul{
+        margin-top:100px;
+    } 
+
+    
+}

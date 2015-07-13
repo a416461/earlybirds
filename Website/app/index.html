@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html ng-app="earlybirds">
+<head>
+    <title>Liu Jian| Designer</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/normalize.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,400,700,800' rel='stylesheet' type='text/css'>
+    <link href="/css/inventory.css" rel="stylesheet" />
+    <link href="/css/responsive.css" rel="stylesheet" />
+    <link href="/css/grid.css" rel="stylesheet" />
+    <link href="/css/suggestion.css" rel="stylesheet" />
+    <link href="/css/tickets.css" rel="stylesheet" />
+    <link href="/css/tickets.css" rel="stylesheet" />
+    <link href="/css/responsive-tables.css" rel="stylesheet" />
+
+    <base href="/" />
+</head>
+<!--<body ng-controller="HeaderController as vm" ng-swipe-left="vm.swipeLeft()" ng-swipe-right="vm.swipeRight()">-->
+    <body>
+    <header>
+        <div id="logo">
+            <a href="/app/index.html">
+                <h1>Early Birds</h1>
+            </a>
+            <a href="/sign-in">
+                <h2>log in</h2>
+            </a>
+            <!-- this is a comment-->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/Members" class="selected">Members</a></li>
+                <li><a href="/tickets" class="selected">Tickets</a></li>
+                <li><a href="/about" class="selected1">About</a></li>
+                <li><a href="/contact" class="selected2">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="primary-content t-border">
+        <ng-view></ng-view>
+    </div>
+
+  
+        <footer>
+            <div class="row">
+                <div class="col-2-lg"></div>
+                <div class="col-4-lg">
+                    <li class=" phone">Contact us:<a href="tel:555-6425"> 555-6425</a></li>
+                    <li class=" twitter">Subscript:<a href=http://twitter.com/intent/tweet?screen_name">click here</a></li>
+                    <li class=" mail">Email: <a href="mailto:lj_ever@hotmail.com"> lj_ever@hotmail.com</a></li>
+                </div>
+                <div class="col-4-lg">
+                    <div class="row">
+                        <div class="col-4-lg"></div>
+                        <div class="col-2-lg">
+                            <div><a href="http://twitter.com"><img src="../img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a><li>Twitter</li></div>
+                        </div>
+                        <div class="col-3-lg">
+                            <div><a href="http://facebook.com"><img src="../img/facebook-wrap.png" alt="Facebook" class=" social-icon "></a><li>Facebook</li></div>
+                        </div>
+                        <div class="col-3-lg"></div>
+                    </div>
+                    <div class="col-2-lg"></div>
+                </div>
+              </div>
+                <p>&copy;2015 Liu Jian</p>
+        </footer>
+    <script src="../js/library/jquery-2.1.4.min.js"></script>
+    <script src="/js/library/responsive-tables.js"></script>
+    <script src="/js/library/Angular.js"></script>
+    <script src="/js/library/angular-router.js"></script>
+    <script src="/js/library/angular-touch.js"></script>
+    <script src="/js/library/ngDraggable.js"></script>
+    <script src="/app/earlybirds.module.js"></script>
+    <script src="/app/earlybirds.routes.js"></script>
+    <script src="/app/controllers/tickets.controller.js"></script>
+    <script src="/app/controllers/suggestions.controller.js"></script>
+    <script src="/app/services/ticket.service.js"></script>
+    <script src="/app/directives/ticket-list.directive.js"></script>
+    <script src="/app/directives/ticket-view.directive.js"></script>
+    <script src="/app/controllers/login.controller.js"></script>
+    <script src="/app/controllers/header.controller.js"></script>
+</body>
+</html>

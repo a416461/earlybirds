@@ -1,0 +1,113 @@
+﻿#central {
+    max-width: 1600px;
+}
+
+h1 {
+    text-align: left;
+}
+
+#content_h1 {
+    color: black;
+}
+
+#content_h2 {
+    color: black;
+    font-weight: normal;
+}
+
+@media screen and (min-width: 480px) {
+
+    form {
+        max-width: none;
+    }
+}
+
+th {
+    padding: 0 55px 2px 0;
+    text-align: left;
+}
+
+label {
+    padding-right: 10px;
+}
+
+#filter select {
+    padding-left: 5px;
+    margin-left: 50px;
+    width: auto;
+}
+
+/*************Voting***************/
+.votingWidget {
+    height: 64px;
+    padding: 7px;
+}
+
+.votingButton {
+    padding-left: 6px;
+    background-image: url(../img/trash.png);
+    width: 20px;
+    height: 20px;
+}
+
+#ticket_header .trash-icon {
+    float: right;
+}
+
+.small-green-button {
+    padding: 10px 15px 10px 15px;
+    color: #FFF;
+    background-color: #4bc970;
+    font-size: 13px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    border: 1px solid #3ac162;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+    margin-bottom: 10px;
+    float: right;
+}
+
+#voting {
+    margin-top: 20%;
+}
+
+.collapse {
+    display: none;
+}
+
+.expand {
+    width: 100%;
+    padding-left: 10%;
+}
+
+#login_format {
+    position: absolute;
+    left: 30%;
+    width: 600px;
+}
+
+.divCell {
+    color: #907676;
+    font-weight: bold;
+    padding-top: 3px;
+}
+
+.topcell {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    font-weight: bold;
+}
+
+.table-row:nth-child(odd) {
+    background: rgba(255,255,255,0.1);
+    color:black;
+}
+
+.table-row:nth-child(even) {
+    background: #85e1ff;
+    color: white;
+}

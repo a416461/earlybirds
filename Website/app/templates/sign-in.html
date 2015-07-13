@@ -1,0 +1,42 @@
+﻿<style>
+    body{
+        width:700px;
+        position:absolute;
+        left:23%;
+    }
+    header {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
+    h1{
+        color: black;
+    }
+</style>
+<div id="central">
+    <form name="Login" id="login_format">
+        <fieldset>
+            <h1>EarlyBird Login</h1>
+            <p>
+                <label for="username">Username: </label>
+                <input id="username" type="text">
+            </p>
+            <p>
+                <label for="password">Password: </label>
+                <input id="password" type="password" ng-model="password" ng-change="passwordChanged()">
+                <span ng-show="password && showPasswordHint">Enter a password longer than 10 characters</span>
+            </p>
+            <p>
+                <label>Login as: </label>
+                <input type="radio" id="male" value="0" name="login_type"><label for="client" class="light">client</label>
+                <input type="radio" id="male" value="1" name="login_type"><label for="user" class="light">user</label></ br>
+            </p>
+            <button type="reset" class="sign_in_button green-button">reset</button>
+            <a href="/tickets" class="sign_in_button green-button">submit</a>
+        </fieldset>
+    </form>
+</div>
+
+<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+

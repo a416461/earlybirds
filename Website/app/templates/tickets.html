@@ -1,0 +1,12 @@
+﻿<section>
+    <div class="row" ng-swipe-left="vm.swipeLeft()"  ng-swipe-right="vm.swipeRight()">
+        <div class="col-7-lg" id="border"  ng-class="{ 'expand': vm.state === 1, 'collapse': vm.state === -1 }">
+            <ticket-list tickets="vm.data.tickets" ></ticket-list>
+        </div>
+        <div class="col-5-lg" id="ticket_form" ng-class="{ 'expand': vm.state === -1, 'collapse': vm.state === 1 }">
+            <ticket-view ticket="vm.data.ticket" client="vm.data.client" ticket-deleted="vm.ticketDeleted"></ticket-view>
+        </div>
+    </div>
+</section>
+
+

@@ -1,0 +1,199 @@
+/***********************
+    General
+***********************/
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+a {
+  text-decoration: none; }
+
+img {
+  max-width: 100%; }
+
+h3 {
+  margin: 0 0 1em 0; }
+
+#central {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+  /*  background-color: white;*/ }
+
+/*.text-center {
+    text-align: center;
+}*/
+/***********************
+    Heading
+***********************/
+header {
+  margin: 0 0 30px 0;
+  padding: 5px 0 0 0;
+  width: 100%; }
+
+#logo {
+  text-align: center;
+  margin: 0; }
+
+h1 {
+  font-family: 'Changa One', sans-serif;
+  margin: 15px 0;
+  font-size: 1.75em;
+  font-weight: normal;
+  line-height: 1.5em; }
+
+h2 {
+  font-size: 1.25em;
+  margin: 5px 0 0;
+  font-weight: normal; }
+
+/***********************
+    Navigation
+***********************/
+nav {
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px 0 0; }
+
+nav ul {
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+   }
+
+nav li {
+  display: inline-block; }
+
+nav a {
+  font-weight: 800;
+  padding: 15px 10px; }
+
+/***********************
+    Footer
+***********************/
+footer {
+  font-size: 1em;
+  text-align: center;
+  clear: both;
+  padding-top: 50px;
+  margin: 150px 0 0;
+  color: #ccc;
+  border-top: 6px solid #6B8A94; }
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px; }
+
+/***********************
+    Page:portfolio
+***********************/
+#gallery {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+#gallery a {
+  background-color: #ccc;
+  color: #a1e7ff;
+  overflow: auto;
+  display: block; }
+
+#gallery li a p {
+  padding: 0 15px;
+  font-size: 1.25em; }
+
+/***********************
+    Colors
+***********************/
+/* green header*/
+header {
+  height: 200px;
+  background: #000000 no-repeat center;
+  /*background-image: url(http://localhost:2000/img/ticket.jpg);*/
+
+  background-size: cover; }
+
+/* site body*/
+body {
+  background-color: white;
+  color: #878787; }
+
+h1, h2 {
+  color: #ffffff; }
+
+/*
+        test comments
+    */
+nav {
+  background: none; }
+
+/*action nav*/
+nav a, nav a:visited {
+  color: #599a68; }
+
+nav a.selected {
+  color: #e9ebf0; }
+
+nav a.selected1 {
+  color: #e9ebf0; }
+
+nav a.selected2 {
+  color: #e9ebf0; }
+
+nav a:hover {
+  color: #808080; }
+
+/***********************
+  Page:About
+***********************/
+.profile-photo {
+  width: 100%;
+  margin: 0 auto 30px;
+  max-width: 200px;
+  display: block;
+  border-radius: 25px; }
+
+/***********************
+  Page:Contact
+***********************/
+.contact-info a {
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+  color: #808080; }
+
+.contact-info {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.2em; }
+
+.contact-info li.phone a {
+  background-image: url("../img/phone.png"); }
+
+.contact-info li.mail a {
+  background-image: url("../img/mail.png"); }
+
+.contact-info li.twitter a {
+  background-image: url("../img/twitter.png"); }
+
+/*# sourceMappingURL=inventory.css.map */
+
+.main-header,
+.main-footer {
+  text-align: center; }
+
+.primary-content {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 0;
+}
+
+.header_collapse{
+        display: none;
+        margin-bottom:100px;
+    }
+

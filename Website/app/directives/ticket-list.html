@@ -1,0 +1,42 @@
+﻿<section id="filter">
+    <strong>Orderby: </strong>
+    <select ng-model="ticketSortOrder" id="first_column">
+        <option value="+id">ID</option>
+        <option value="+ticketType">Type</option>
+        <option value="+status">Status</option>
+        <option value="-ticketType">TypeDESC</option>
+        <option value="-statusType">StatusDESC</option>
+        <option value="-priority">Priority</option>
+    </select>
+
+    <table class="full-width responsive">
+        <tr>
+            <th class="divCell topcell" id="id">ID</th>
+            <th class="divCell topcell">Type</th>
+            <th class="divCell topcell">Status</th>
+            <th class="divCell topcell">Priority</th>
+            <th class="divCell topcell">Title</th>
+        </tr>
+
+        <tr class="table-row" ng-repeat="ticket in vm.tickets |orderBy:ticketSortOrder">
+            <td class="divCell"><a href="/tickets/{{ticket.id}}">{{ticket.id}}</a></td>
+            <td class="divCell">{{ticket.ticketType}}</td>
+            <td class="divCell">{{ticket.status}}</td>
+            <td class="divCell" align="center">{{ticket.priority}}</td>
+            <td class="divCell">{{ticket.title}}</td>
+        </tr>
+    </table>
+
+
+    <!--<table>
+        <tbody>
+            <tr ng-repeat="ticket in vm.tickets |orderBy:ticketSortOrder">
+                <td><a href="/tickets/{{ticket.id}}">{{ticket.id}}</a></td>
+                <td>{{ticket.ticketType}}</td>
+                <td>{{ticket.status}}</td>
+                <td>{{ticket.priority}}</td>
+                <td>{{ticket.title}}</td>
+            </tr>
+        </tbody>
+    </table>-->
+</section>
